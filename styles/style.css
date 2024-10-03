@@ -4,34 +4,116 @@
     --color3: #8ab3cf;
     --color4: #bdd1de;
     --color5: #e4ebf0;
+    --whatsapp1: #609d51;
+    --whatsapp2: #d6ffc1;
+    --instagram1: #964d95;
+    --instagram2: #ffc5ff;
+    --github1: #808080;
+    --github2: #ffffff;
 }
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     background-color: var(--color5);
+    padding-bottom: 50px;
 }
 
 .barra-de-navegacao {
     background-color: var(--color1);
     overflow: hidden;
+
+    #titulo-barra-de-navegacao {
+        float: left;
+        color: var(--color5);
+        text-align: center;
+        padding: 21px 24px;
+        text-decoration: none;
+        font-size: 36px;
+        margin: 27px;
+    }
+
+    .links-da-barra-de-navegacao a {
+        float: left;
+        background-color: var(--color3);
+        color: var(--color5);
+        text-align: center;
+        padding: 21px 24px;
+        text-decoration: none;
+        font-size: 24px;
+        margin: 30px 15px;
+        border: 3px solid var(--color5);
+        border-radius: 40px;
+        box-shadow: 5px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    .links-da-barra-de-navegacao a:hover {
+        background-color: var(--color5);
+        color: var(--color1);
+        box-shadow: none;
+        transition: 0.5s;
+    }
+
+    .links-da-barra-de-navegacao {
+        float: right;
+    }
 }
 
-#titulo-barra-de-navegacao,
-.links-da-barra-de-navegacao a {
-    float: left;
-    color: var(--color5);
-    text-align: center;
-    padding: 21px 21px;
-    text-decoration: none;
-    font-size: 24px;
-}
+.rodape {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color1);
+    padding: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.links-da-barra-de-navegacao a:hover {
-    background-color: var(--color3);
-    color: var(--color5);
-}
+    .informacao-rodape {
+        color: var(--color5);
+        font-size: 15px;
+        padding: 9px 24px;
+        margin: 0 15px;
+        border: 3px solid var(--color5);
+        border-radius: 40px;
+        box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.5);
+    }
 
-.links-da-barra-de-navegacao {
-    float: right;
+    .informacao-rodape:hover {
+        background-color: var(--color3);
+        color: var(--color5);
+        box-shadow: none;
+        transition: 0.5s;
+    }
+
+    #informacao-rodape-whatsapp {
+        background-color: var(--whatsapp1);
+        color: var(--whatsapp2);
+    }
+
+    #informacao-rodape-whatsapp:hover {
+        background-color: var(--whatsapp2);
+        color: var(--whatsapp1);
+    }
+
+    #informacao-rodape-instagram {
+        background-color: var(--instagram1);
+        color: var(--instagram2);
+    }
+
+    #informacao-rodape-instagram:hover {
+        background-color: var(--instagram2);
+        color: var(--instagram1);
+    }
+
+    #informacao-rodape-github {
+        background-color: var(--github1);
+        color: var(--github2);
+    }
+
+    #informacao-rodape-github:hover {
+        background-color: var(--github2);
+        color: var(--github1);
+    }
 }
