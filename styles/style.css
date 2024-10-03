@@ -35,7 +35,7 @@ body {
 
     .links-da-barra-de-navegacao a {
         float: left;
-        background-color: var(--color3);
+        background-color: var(--color1);
         color: var(--color5);
         text-align: center;
         padding: 21px 24px;
@@ -48,8 +48,8 @@ body {
     }
 
     .links-da-barra-de-navegacao a:hover {
-        background-color: var(--color5);
-        color: var(--color1);
+        background-color: var(--color3);
+        color: var(--color5);
         box-shadow: none;
         transition: 0.5s;
     }
