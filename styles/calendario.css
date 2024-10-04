@@ -1,0 +1,71 @@
+:root {
+  --color1: #4180ab;
+  --color2: #ffffff;
+  --color3: #8ab3cf;
+  --color4: #bdd1de;
+  --color5: #e4ebf0;
+}
+
+.calendario {
+  width: 350px;
+  padding: 20px;
+  background-color: var(--color2);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendario-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mes {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.anterior,
+.posterior {
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: var(--color1);
+  color: var(--color2);
+  border-radius: 50%;
+}
+
+.calendario-body {
+  margin-top: 10px;
+}
+
+.dias-da-semana {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+}
+
+.dias {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.dias div {
+  width: calc(100% / 7);
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+}
+
+.dia-atual {
+  background-color: var(--color4);
+  border-radius: 5px;
+}
+
+.dias div:hover {
+  background-color: var(--color5);
+  cursor: pointer;
+  border-radius: 5px;
+}
