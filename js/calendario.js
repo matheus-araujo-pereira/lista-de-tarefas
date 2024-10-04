@@ -26,18 +26,15 @@ function renderizarCalendario() {
   const diasContainer = document.getElementById("dias-do-calendario");
   diasContainer.innerHTML = "";
 
-  // Adicionar dias vazios no início da semana
   for (let i = 0; i < primeiroDia; i++) {
     const emBranco = document.createElement("div");
     diasContainer.appendChild(emBranco);
   }
 
-  // Adicionar dias do mês
   for (let i = 1; i <= diasNoMes; i++) {
     const dia = document.createElement("div");
     dia.innerText = i;
 
-    // Destacar o dia atual
     if (
       i === new Date().getDate() &&
       mes === new Date().getMonth() &&
