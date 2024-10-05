@@ -51,6 +51,17 @@
           <div class="dias" id="dias-do-calendario"></div>
         </div>
       </div>
+
+      <div class="lista-tarefas" id="lista-tarefas">
+        <h3 id="titulo-dia">Tarefas do dia <span id="dia-selecionado"></span></h3>
+        <ul id="tarefas"></ul>
+        <input
+          type="text"
+          id="nova-tarefa"
+          placeholder="Adicionar nova tarefa"
+        />
+        <button id="botao-adicionar" onclick="adicionarTarefa()"><i class="fa-solid fa-plus"></i></button>
+      </div>
     </main>
 
     <footer id="rodape">

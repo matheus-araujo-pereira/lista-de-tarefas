@@ -4,6 +4,8 @@
   --color3: #8ab3cf;
   --color4: #bdd1de;
   --color5: #e4ebf0;
+  --color6: #609d51;
+  --color7: #d6ffc1;
 }
 
 .calendario {
@@ -68,4 +70,54 @@
   background-color: var(--color5);
   cursor: pointer;
   border-radius: 5px;
+}
+
+.lista-tarefas {
+  margin-left: 50px;
+  padding: 20px;
+  background-color: var(--color2);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  min-width: 250px;
+}
+
+.lista-tarefas.active {
+  display: block;
+}
+
+#titulo-dia {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#tarefas {
+  margin-left: 35px;
+  list-style: circle;
+
+  li {
+    margin-top: 10px;
+  }
+}
+
+#nova-tarefa {
+  margin-top: 10px;
+  padding: 10px;
+  border: 2px solid var(--color6);
+  border-radius: 10px;
+}
+
+#botao-adicionar {
+  margin-top: 20px;
+  padding: 8px 10px;
+  border: 2px solid var(--color6);
+  border-radius: 50%;
+  color: var(--color2);
+  background-color: var(--color6);
+}
+
+#botao-adicionar:hover {
+  cursor: pointer;
+  color: var(--color6);
+  background-color: var(--color7);
 }
